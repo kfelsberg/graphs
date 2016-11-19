@@ -47,13 +47,13 @@ function drawChart() {
   // create the table that holds our data
 
   var data = new google.visualization.DataTable();
-  data.addColumn('string', 'Type of Vehicle');
-  data.addColumn('number', 'Number of Vehicles');
+  data.addColumn('string', 'Type of Vehicle' );
+  data.addColumn('number', 'Number of Vehicles', {role: "style"});
   data.addRows([
-    ['Cars', 140],
-    ['Motorbikes', 70],
-    ['Vans', 55],
-    ['Buses', 5]
+    ['Cars', 140, "#62698c"],
+    ['Motorbikes', 70, "#c7ced7"],
+    ['Vans', 55, "#635eb4"],
+    ['Buses', 5, "#828e9a"]
     ]);
 
   // add style
